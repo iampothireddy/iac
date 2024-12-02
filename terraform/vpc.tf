@@ -16,14 +16,15 @@ resource "aws_internet_gateway" "igw" {
 
 resource "aws_subnet" "public-subnet" {
   vpc_id                  = aws_vpc.vpc.id
-  cidr_block              = "10.0.2.0/24"
-  availability_zone       = "ap-south-1a"
+  cidr_block              = "10.0.2.0/24"  # You can change this if needed
+  availability_zone       = "ap-south-1b"  # Ensure this is valid (either ap-south-1a, ap-south-1b, ap-south-1c)
   map_public_ip_on_launch = true
 
   tags = {
     Name = var.subnet-name
   }
 }
+
 
 resource "aws_route_table" "rt" {
   vpc_id = aws_vpc.vpc.id
