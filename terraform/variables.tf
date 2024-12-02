@@ -44,7 +44,7 @@ variable "iam-role" {
 variable "ami_id" {
   description = "AMI ID for the EC2 instance"
   type        = string
-  default     = "ami-0dee22c13ea7a9a67" // Replace with the latest AMI ID for your region
+  default     = "ami-09b0a86a2c84101e1" // Replace with the latest AMI ID for your region
 }
 
 variable "instance_type" {
