@@ -44,7 +44,7 @@ variable "iam-role" {
 variable "ami_id" {
   description = "AMI ID for the EC2 instance"
   type        = string
-  default     = "ami-0c7217cdde317cfec" // Replace with the latest AMI ID for your region
+  default     = "ami-0dee22c13ea7a9a67" // Replace with the latest AMI ID for your region
 }
 
 variable "instance_type" {
@@ -64,4 +64,3 @@ variable "instance_name" {
   type        = string
   default     = "Jumphost-server"
 }
-#
